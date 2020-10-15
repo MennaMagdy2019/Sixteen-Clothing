@@ -10,6 +10,16 @@ let numberOfImages = slideImage.length;
 let slideWidth = slideImage[0].clientWidth;
 let currentSlide = 0;
 
+var index=0;
+function goright(){
+  if(index == slideImage.length-1) index=0;
+  else index++;
+  slidesContainer.style.transform = "translateX(-" + slideWidth*index + "px)";
+  currentSlide = index;
+  setActiveClass()
+}
+setInterval(goright ,1000);
+
 function init(){
    /*
    slideImage[0] = 0;

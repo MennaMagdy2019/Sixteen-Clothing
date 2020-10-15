@@ -1,3 +1,6 @@
+.slides-container{
+    height: 50vh;
+}
 section{margin: 0;}
 .Contact{
     width: 100%;
@@ -77,6 +80,12 @@ section{margin: 0;}
     border: 1px solid #eeeeee;
     color:#1e1e1e;
     overflow: hidden;
+    outline: none;
+
+}
+.contact-form textarea:focus,
+.contact-form input:focus{
+    box-shadow:0px 1px 3px 0px #4a4a4a;
 }
 .contact-form .btn{
     padding: 10px 20px;

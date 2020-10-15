@@ -1,4 +1,6 @@
-
+.slides-container{
+    height: 50vh;
+}
 .col-6{padding: 0 15px;}
 .About{
     align-items: unset;
