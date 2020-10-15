@@ -1,0 +1,213 @@
+section{margin: 0;}
+.Contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 32%;
+    grid-gap: 30px;
+  /*  background-color: #bbbbbb;*/
+    align-items: unset;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.Contact-Header{
+    margin-top: 60px;
+}
+.Contact-Header h2{
+    font-size: 28px;
+    line-height: 33px;
+    color: #1e1e1e;
+    font-weight: 500;
+    margin-bottom: 15px;
+   padding-bottom: 15px;
+}
+/*
+.Contact{
+    align-items: unset;
+    border-bottom: 0;
+    padding-top: 3%;
+    padding-bottom: 0;
+}*/
+.Contact-img{height: 350px;}
+.Contact-img iframe{
+    height: 100%;
+    width: 100%;
+}
+.Contact-text{
+    padding: 10px 30px;
+  /*  background-color: bisque;*/
+}
+.Contact-text h4{
+    color:#1a6692;
+    margin: 0;}
+.Contact ul{padding: 50px 0 0;}
+.Contact-text li{
+    display: inline-block;
+    padding: 13px;
+    background-color:  #eeeeee;
+    cursor: pointer;
+    transition: all 300px ease-in-out;
+}
+.Contact-icon li a{color: #000000;}
+.Contact-text li:hover{ background-color:#F33F3F;}
+.Contact-text li:hover a,
+.Contact ul li a:hover 
+{color:#fff;}
+
+/*****Contact Form**********/
+.contact-form{
+  /*  background-color: blueviolet;*/
+    color: #6C757D;
+}
+
+.contact-form input{
+    display: inline-block;
+    width: 96%;
+    padding: 15px 12px;
+    margin: 0 0 30px;
+    border: 1px solid #eeeeee;
+    outline: none;
+}
+.contact-form textarea{
+    width: 96%;
+    min-height: 100px;
+    max-height: 150px;
+    resize: vertical;
+    padding: 15px 12px;
+    border: 1px solid #eeeeee;
+    color:#6C757D;
+}
+.contact-form .btn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #F33F3F;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact-form .btn:hover{background-color: #1e1e1e;}
+/*****Contact-links*****/
+
+.contact-links ul{
+    padding: 0;
+    margin: 0;
+   
+}
+.contact-links li{
+    padding: 15px 0;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color:#eeeeee;
+
+}
+.contact-links ul li a{
+    cursor: pointer;
+    color:#22658f;}
+.contact-links ul li a:hover,
+.contact-links ul li a:active
+{ color:#F33F3F;}
+
+.Tittle{
+    display: none;
+    transition: all 500ms ease-in-out;
+}
+.Tittle.active{
+  /*  position: absolute;
+    z-index:-1;*/
+    display: block;
+    transition: all 500ms ease-in-out;
+   /* animation-name: Contact;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    position: relative;*/
+}
+@keyframes Contact{
+    0%{top:0px;}
+    100%{top:50px;}
+}
+/***************Contact-member*************/
+.Contact-Header h2 , .partner-Header h2{
+    text-align:left;
+    border-bottom: 1px solid #bbbbbb;
+    font-size: 28px;
+    margin:0 0 15px;
+    text-transform: uppercase;
+    line-height: 33px;
+}
+
+/*********patners***********/
+.partner-Header h2{
+    text-transform: capitalize;
+    font-weight: 500;}
+.col-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  
+}
+.col-3 .partner{
+    background-color: #eeeeee;
+    text-align: center;
+    margin: 8px;
+    flex-basis: 18%;
+    height: 150px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+.col-3 .partner:hover {opacity: 0.8;}
+.col-3 .partner h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+    margin: 25px;
+}
+ /***********phone*********/
+@media (max-width :520px){
+    section{margin: 0;}
+    .Contact{
+        grid-template-columns: 100%;
+    }
+    /*********patners***********/
+    .col-3{
+        display: block;
+        overflow: hidden;
+    }
+  
+}
+@media (min-width:521px) and (max-width:767px){
+    .container{
+        padding: 0 10%;
+    }
+    /*******Contact******/
+    .Contact{
+        grid-template-columns: 100%;
+    }
+    .col-12-phone{flex-basis: 100%;}
+    
+    /******partner*****/
+    .col-3 .partner{padding: 0 10px;}
+    .Contact-img{
+        margin-bottom: 20px;
+        height: auto;
+    }
+}
+/**********Tab*******/
+@media  (min-width:767px) and (max-width:1000px){
+   .container{padding: 0 10%;}
+    
+    .section{margin:  0 ;}
+    .col-3 .partner{ flex-basis: 30%;}
+    .Contact-img{
+        display: flex;
+        align-items: center;
+    }.Contact-text li{
+        padding: 8px;
+    }
+
+}

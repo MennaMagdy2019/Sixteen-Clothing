@@ -1,0 +1,106 @@
+
+/**********Header**********/
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+/*****/
+.slides-container{
+    position: relative;
+    height: 80vh;
+}
+
+header .header-text{
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    transform: translatey(-50%);
+}
+/*******Navigation-dots*********/
+.navigation-dots{
+    display: flex;
+    height: 32px;
+    margin: 16px 0;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+.single-dot{
+    background: #333;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.single-dot.active{
+    background: #eee;
+}
+
+
+/************product*************/
+/****/
+.product-Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbbbbb;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.product-Header a{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}/****/
+
+.About-text h4,
+.creative h4
+{color:#1A6692;}
+
+.About{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.creative a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+/**********Creative**********/
+.creative{
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/********media Query***************/
+
+/***********phone*********/
+@media  (max-width:767px){
+    /**********About**********/
+    .About{flex-wrap: wrap;}
+    .col-12-phone{
+        margin: 10px 0;
+        flex-basis: 100%;}
+    
+    /**********Creative**********/
+    .creative{
+        justify-content: space-between;
+        flex-direction: column;
+       text-align: center;
+    }
+    .creative button{width: 100%; }
+    button:hover{background-color: var(--nav-color);}
+     
+}
+/**********Tab*******/
+@media  (min-width:767px) and (max-width:1000px){
+     .creative button{ width: 40%;}
+     .creative a{padding: 0;}
+}

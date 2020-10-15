@@ -1,0 +1,46 @@
+.About-text h4,
+.creative h4
+{color:#1A6692;}
+
+/**********About**********/
+.col-6{
+    flex-basis: 50%;
+}
+.About-Header h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbbbbb;
+    line-height: 33px;
+    font-weight: 500;
+    text-align: left;
+}
+.About{
+    border-bottom: 0.5px solid #bbbbbb;
+    padding-bottom: 3%;
+}
+.About-text p a{ color: #0056b3;}
+.About a{color: #4a4a4a;}
+.About ul{padding: 20px;}
+.About li{margin: 0 0 10px;}
+.About ul li:hover ,
+.About ul li a:hover 
+{color: var(--secondary-color);}
+button{ 
+    cursor: pointer;
+   padding: 10px 0;
+    outline: none;
+    border: none;
+    margin: 20px 10px 0;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    width: 30%;
+}
+.About button a {
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+}
+button:hover{
+    background-color: var(--nav-color);
+    
+}
